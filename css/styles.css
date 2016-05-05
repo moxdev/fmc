@@ -2,12 +2,19 @@ body {
     background-color: #ADD8E6;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
-header {
-}
+/* header */
 #logo {
     width: 50%;
     height: auto;
 }
+.title {
+    max-width: 750px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border: 1px solid #000;
+}
+/* header */
 /* Ads */
 .tlb {
      margin-top: 100px;
@@ -44,17 +51,8 @@ header {
     text-align: center;
     font-size: 12pt;
 }
-
 /* Ads*/
-
-.title {
-    max-width: 750px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: #e8e8e8;
-    border: 1px solid #000;
-}
-
+/* Videos */
 .video-title, .video-content {
     width: 275px;
     border: 1px solid #000;
