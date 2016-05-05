@@ -1,5 +1,6 @@
 body {
     background-color: #ADD8E6;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 header {
 }
@@ -9,6 +10,21 @@ header {
 }
 .tlb {
      margin-top: 100px;
+     width: 728px;
+     height: 90px;
+     border: 1px solid #000000;
+     background-color: #e8e8e8;
+     background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.tlb p {
+    margin: 0px 20px;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 25px;
+}
+.tlb p:nth-child(2) {
+    font-size: 8pt;
+    text-align: right;
 }
 
 .title {
