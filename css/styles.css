@@ -8,6 +8,7 @@ header {
     width: 50%;
     height: auto;
 }
+/* Ads */
 .tlb {
      margin-top: 100px;
      width: 728px;
@@ -26,6 +27,25 @@ header {
     font-size: 8pt;
     text-align: right;
 }
+.ad {
+    text-align: right;
+    font-size: 8pt;
+    margin-right: 60px;
+}
+.mr1, .mr2, .mr3 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    background-color: #e8e8e8;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+    margin: 0 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+/* Ads*/
 
 .title {
     max-width: 750px;
