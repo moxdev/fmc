@@ -2,14 +2,12 @@ body {
     background-color: #ADD8E6;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
-
-
 /* header */
-
 #logo {
-    width: 50%;
+    /*width: 50%;*/
     height: auto;
 }
+/* header*/
 
 .title {
     max-width: 750px;
@@ -19,12 +17,7 @@ body {
     border: 1px solid #000;
 }
 
-
-/* header */
-
-
 /* Ads */
-
 .tlb {
     margin-top: 100px;
     width: 728px;
@@ -45,29 +38,24 @@ body {
     font-size: 8pt;
     text-align: right;
 }
-
-
 /* Title Row */
-
-
-
-
-/* Title Row*/
-
-
 /*.row-1 {
     margin-top: 15%;
     top: 350px;
     left: 320px;
 }*/
 
-/*.row-1 {
+.row-1 {
     position: absolute;
     z-index: -1;
     width: 100%;
-    top: 20px;
-    right: 84px;
-}*/
+    /*top: 20px;
+    right: 84px;*/
+}
+
+.row-2 {
+    margin-top: 150px;
+}
 
 /*.row-2 {
     margin-top: 60px;
@@ -77,11 +65,9 @@ body {
     font-size: 8pt;
     margin-right: 60px;
 }
-
 .ad-move {
     margin-right: 200px;
 }
-
 .mr1,
 .mr2,
 .mr3 {
@@ -92,19 +78,12 @@ body {
     border: 1px solid #000;
     background-color: #e8e8e8;
     background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255, 255, 255, .5) 35px, rgba(255, 255, 255, .5) 70px);
-    margin: 0 20px;
+    /*margin: 0 20px;*/
     text-align: center;
     font-size: 12pt;
 }
 
-.ad2 {
-    margin-top: 35px;
-}
-
-
 /* Ads*/
-
-
 /* Videos */
 
 .video-title,
@@ -138,7 +117,7 @@ body {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .main {
-        margin: 20%;
+        margin: 10%;
         width: 100%;
         height: auto;
     }
@@ -166,14 +145,19 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-    .ad1 {
+    /*.ad1 {
         margin-left: 336px;
         width: 100%;
         top: 0;
-    }
-    .row-1 {
+        right: 0;
+        position: relative;
+    }*/
+   /* .row-1 {
         position: absolute;
-    }
+    }*/
+    .ad2 {
+    margin-top: 120px;
+}
 
 }
 
