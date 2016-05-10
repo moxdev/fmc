@@ -5,8 +5,13 @@
 body {
     background-color: #ADD8E6;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    position: absolute;
+    margin: 0 auto;
     overflow-x: hidden;
     position: relative;
+}
+header, .main {
+    margin-left: 60px;
 }
 .main {
     margin-bottom: 20px;
@@ -64,7 +69,7 @@ body {
     right: 0;
 }
 /* 1st Row */
-.row-1 {
+.title-row {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -100,6 +105,7 @@ body {
 footer {
     background-color: #333;
     color: #fff;
+    width: 100%;
 }
 footer p {
     margin: 0;
@@ -119,7 +125,7 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
         width: 100%;
         height: 100%;
     }
-    .row-1,
+    .title-row,
     .ad1,
     .ad2 {
         position: relative;
@@ -165,7 +171,7 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
     .vid-2 {
         margin-top: 30px;
     }
-    .row-1 {
+    .title-row {
         position: absolute;
     }
     .row-2 {
@@ -193,10 +199,8 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
     }
     .main {
         margin: 0 auto !important;
-        width: 100% !important;
     }
     .title-row {
-        position: relative !important;
         margin: 0 auto !important;
     }
      .program-title {
@@ -205,8 +209,36 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
         height: auto !important;
         margin-top: 50px !important;
     }
-
-
+    .ad {
+        position: absolute;
+    }
+    .ad1, .ad2 {
+        position: absolute;
+        z-index: -1;
+        margin-top: 200px !important;
+    }
+    .ad2 {
+        margin-top: 20px !important;
+    }
+    .ad3 {
+        margin-top: 10px !important;
+    }
+    .row-2, .row-3 {
+        padding:0 30px;
+    }
+    .vid-1, .vid-2, .vid-3 {
+        margin-left: 325px !important;
+    }
+    .vid-2 {
+        margin-top: 20px !important;
+    }
+    .vid-3 {
+        position: absolute !important;
+        z-index: -1 !important;
+    }
+    .vid-4 {
+        margin-top: 50px;
+    }
 }
 /* Landscape iPad */
 @media screen and (min-width: 768px) and (max-width: 1024px),
