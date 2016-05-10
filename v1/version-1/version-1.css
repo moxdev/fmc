@@ -1,0 +1,134 @@
+body {
+    background-color: #ADD8E6;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+/* header */
+.title {
+    max-width: 750px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border: 1px solid #000;
+}
+/* Ads */
+.tlb {
+    margin-top: 120px;
+    width: 728px;
+    height: 90px;
+    border: 1px solid #000000;
+    background-color: #e8e8e8;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255, 255, 255, .5) 35px, rgba(255, 255, 255, .5) 70px);
+}
+.tlb p {
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 25px;
+}
+.tlb p:nth-child(2) {
+    font-size: 8pt;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+.tlb-ad {
+    margin-bottom: 10px;
+}
+.row-1 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    /*top: 20px;
+    right: 84px;*/
+}
+.ad, .ad-move {
+    text-align: right;
+    font-size: 8pt;
+}
+.ad {
+    margin-right: 60px;
+}
+.ad-move {
+    margin-right: 90px;
+}
+.mr1,
+.mr2,
+.mr3 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    background-color: #e8e8e8;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 35px, rgba(255, 255, 255, .5) 35px, rgba(255, 255, 255, .5) 70px);
+    text-align: center;
+    font-size: 12pt;
+}
+/* Ads*/
+/* Videos */
+.video-title,
+.video-content {
+    width: 275px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.video-title {
+    background-color: #fff;
+}
+.video-content {
+    height: 250px;
+    background: #e8e8e8;
+}
+.video-content p {
+    margin-top: 90px;
+    font-size: 24px;
+}
+/*==========  Media Queries ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .main {
+        margin: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .row-1, .ad1, .ad2 {
+        position: relative;
+        z-index: 0;
+    }
+    .row2 {
+        margin: 0;
+    }
+    .title {
+        margin: 20px 40px 10px 0;
+    }
+    .ad {
+        text-align: center;;
+    }
+    .ad2, .ad3 {
+        margin-top: 10px;
+    }
+    .vid-1, .vid-2, .vid-3, .vid-4 {
+        margin-left: 10px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    .ad1 {
+        margin-left: 30px;
+    }
+    .ad2 {
+        margin-top: 120px;
+    }
+    .vid-1, .vid-2 {
+        margin-top: 30px;
+    }
+   .ad-move {
+        margin-right: 200px;
+    }
+    .row-2 {
+        margin-top: 150px;
+    }
+
+}
