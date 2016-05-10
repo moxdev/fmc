@@ -53,9 +53,16 @@ body {
     text-align: right;
     font-size: 8pt;
 }
-/*.ad-move {
-    margin-right: 00px;
-}*/
+.ad-move {
+    width: 300px;
+    position: absolute;
+    margin-top: 25px;
+}
+.ad-move p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 /* 1st Row */
 .row-1 {
     position: absolute;
@@ -150,7 +157,7 @@ footer p {
         margin-right: 60px;
     }
     .ad-move {
-        margin-right: 100px;
+        /*margin-right: 100px;*/
     }
     .vid-1,
     .vid-2 {
