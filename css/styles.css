@@ -1,4 +1,4 @@
-/*  Laptop & Desktop */
+/* Desktop */
 /* Hides Scrollbar in Chrome */
 ::-webkit-scrollbar {
     display: none;
@@ -126,18 +126,19 @@ footer {
 }
 footer p {
     margin: 0;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
+}
+.small {
+    padding-top: 0;
 }
 /*==========  Media Queries ==========*/
 /*
 Min-Width: Refers to everything greater than or equal to the amount given.
-Max-Width: Refers to everything less than or equal to the amount given.*/
-
+Max-Width: Refers to everything less than or equal to the amount given.
+*/
+/* Laptops */
 @media only screen and (max-width : 1198px) {
-    body {
-        /*background: #000;*/
-    }
     .main {
         margin: 0 auto 20px auto;
         padding: 0;
@@ -184,15 +185,14 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
         margin:0 auto;
         padding: 0;
     }
-    .main, .center-header {
-        /*margin:0 auto;*/
-        /*padding: 0;*/
+    .main {
+        margin-bottom: 30px;
     }
     #logo {
         width: 75%;
     }
     .program-title {
-        width: auto;
+        width: 100%;
         height: auto;
         padding: 20px;
         margin: 80px 0 20px 0;
@@ -202,116 +202,123 @@ Max-Width: Refers to everything less than or equal to the amount given.*/
     }
     .ad1 {
         margin-left: 28px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
-    .ad {
+    .ad2 {
+        margin-top: 30px;
+    }
+    .ad3 {
+        margin-top: 30px;
+    }
+    .ad, .ad-move {
         position: absolute;
-        top:0;
+    }
+    .ad-move {
+        width: auto;
+        left: 70px;
     }
     .row-1, .row-2, .row-3 {
         margin: 0 auto;
     }
+    .vid-3, .vid-4 {
+        margin-top: 30px;
+    }
 }
-
-
-/* Portrait iPad */
-/*@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
-    #logo {
-        width: 50%;
-        height: auto;
+/*========= Mobie Devices ===============*/
+@media screen and (max-width: 479px) {
+    body {
         margin: 0 auto;
     }
-    .main {
-        margin: 0 auto !important;
+    .container {
+        padding: 0;
     }
-    .title-row {
-        margin: 0 auto !important;
+    .col-xs-push-3 {
+        padding: 0;
     }
-     .program-title {
-        margin: 0 auto !important;
-        width: 100% !important;
-        height: auto !important;
-        margin-top: 50px !important;
+    .ad1 {
+        padding: 0;
+        margin-left: 0;
     }
-    .ad {
-        position: absolute;
+}
+/* Portrait viewport 320 x 480 */
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+    .col-xs-push-3 {
+        padding-left: 10px;
     }
-    .ad1, .ad2 {
-        position: absolute;
-        z-index: -1;
-        margin-top: 200px !important;
-    }
-    .ad2 {
-        margin-top: 20px !important;
-    }
-    .ad3 {
-        margin-top: 10px !important;
-    }
-    .row-2, .row-3 {
-        padding:0 30px;
-    }
-    .vid-1, .vid-2, .vid-3 {
-        margin-left: 325px !important;
-    }
-    .vid-2 {
-        margin-top: 20px !important;
-    }
-    .vid-3 {
-        position: absolute !important;
-        z-index: -1 !important;
-    }
-    .vid-4 {
-        margin-top: 50px;
-    }
-}*/
-/* Landscape iPad */
-/*@media screen and (min-width: 768px) and (max-width: 1024px),
-(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .center-header {
+    .ad1 {
+        padding-left: 0;
         margin: 0 auto;
-        max-width: 768px;
     }
-    .title-row {
-        position: relative;
-        margin-top: 10px;
-        margin-left: 100px;
+}
+/* Landscape viewport 480 x 320 */
+@media screen and (min-width: 320px) and (max-width: 480px), (min-device-width: 320px) and
+(max-device-width: 480px) and (orientation : landscape) {
+    .container {
+        margin: 0 auto;
     }
     .program-title {
-        width: 350px;
-        height: 250px;
-        text-align: center;
-        background-color: #e8e8e8;
-        border: 1px solid #000;
-        margin-left: 20px;
+        margin-top: 60px;
+        margin-left: 15px;
+        padding:0;
     }
-    .row-2 {
-        position: relative;
-        margin: 20px 0;
+}
+/* Portrait viewport 320 x 568 */
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+    .container {
+        margin: 0 auto;
     }
-    .row-3 {
-        margin:25px 0;
+    .col-xs-push-3 {
+        left: 0;
     }
-    .vid-1, .vid-2 {
+    .ad1 {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+}
+/* Landscape viewport 568 x 320 */
+@media screen and (min-width: 320px) and (max-width: 568px), (min-device-width: 320px) and
+(max-device-width: 568px) and (orientation : landscape) {
+    .col-xs-push-3 {
+        left: 20%;
+    }
+}
+/* Portrait viewport 360 x 640 */
+@media screen and (max-width: 360px), (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+    body {
+        margin: 0 auto;
+    }
+    .program-title {
+        margin-top: 30px;
+    }
+    .col-xs-push-3 {
+        left: 0;
+    }
+}
+/* Landscape viewport 640 x 360 */
+@media screen and (min-width: 360px) and (max-width: 640px), (min-device-width: 360px) and
+(max-device-width: 640px) and (orientation : landscape) {
+    body {
+        margin: 0 auto;
+    }
+    .title-row {
         margin: 0;
     }
-
     .ad1 {
-        margin-top: 10px;
+        margin-left: 15px;
     }
-
-    .ad2 {
-        margin-top: 10px;
+}
+/* iPad Portrait */
+@media screen and (max-width: 600px), (min-device-width: 600px) and (max-device-width: 960px) and (orientation : portrait) {
+    .main {
+        margin: 0 auto 30px auto;
     }
-    .ad3 {
-        margin-top: 10px;
+    .title-row {
+        margin: 0 auto;
     }
-    .ad-move p {
-        padding-right: 20px;
+    .program-title {
+        padding:0;
     }
-    .ad {
-        padding-left: 210px;
+    .ad1 {
+        margin-left: 15px;
     }
-}*/
-
-
-
+}
